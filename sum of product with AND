@@ -1,1 +1,24 @@
-?
+class Solution {
+  public:
+    long long pairAndSum(int N, long long Arr[]) {
+        // code here
+        long long ans=0,i,j,k;
+        for(i=31;i>=0;i--)
+        {
+            k=0;
+            for(j=0;j<N;j++)
+            {
+                if((1LL<<i)&Arr[j])
+                {
+                    k++;
+                }
+            }
+          
+            k=(k*1LL*(k-1))/2;
+            ans+=(k*1LL*(1LL<<i));
+            
+           
+        }
+        return ans;
+    }
+};
