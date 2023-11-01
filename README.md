@@ -1,1 +1,1 @@
-# Bit_Manopulation Problem you can find.
+# Bit manipulation Problem you can find.
